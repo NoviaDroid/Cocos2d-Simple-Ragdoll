@@ -79,7 +79,8 @@ var MyLayer = cc.Layer.extend({
         ceiling.setFriction(1);
 
         this.scheduleUpdate();
-        this.addPhysicsBody(cc.p(cc.canvas.width/2, cc.canvas.height/2));
+        //this.addPhysicsBody(cc.p(cc.canvas.width/2, cc.canvas.height/2));
+        this.addGrossini(cc.p(cc.canvas.width/2, cc.canvas.height/2));
         return true;
     },
 
